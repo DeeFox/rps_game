@@ -7,14 +7,26 @@
     <script src="rps_game.js" charset="utf-8"></script>
   </head>
   <body>
-    <h1>Rock Paper Scissors</h1>
-    <h2 id="computer_symbol">(0) Computer: ---</h2>
-    <h2 id="player_symbol">(0) Player: ---</h2>
-    <h2 id="status_text">Choose a symbol!</h2>
+    <div class="content">
+      <h1>ROCK PAPER SCISSORS</h1>
+      <div class="scoreboard">
+        <div class="score">
+          <div class="scorename">Computer</div>
+          <div id="score_computer" class="scorevalue">0</div>
+        </div>
+        <div class="score">
+          <div class="scorename">Player</div>
+          <div id="score_player" class="scorevalue">0</div>
+        </div>
+      </div>
+      <h3 id="computer_symbol">Computer: ---</h2>
+      <h3 id="player_symbol">Player: ---</h2>
+      <h2 id="status_text">Choose a symbol!</h2>
 
-    <hr>
-    <button id="btn_rock">Rock</button>
-    <button id="btn_paper">Paper</button>
-    <button id="btn_scissors">Scissors</button>
+      <hr>
+      <button id="btn_rock">Rock</button>
+      <button id="btn_paper">Paper</button>
+      <button id="btn_scissors">Scissors</button>
+    </div>
   </body>
 </html>

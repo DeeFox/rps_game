@@ -1,0 +1,29 @@
+body {
+  background-color: #2E4052;
+  font-family: Helvetica;
+  color: #FFFFFF;
+}
+h1 {
+  font-size: 45px;
+  font-weight: bold;
+  text-align: center;
+}
+.content {
+  margin: auto;
+  width: 600px;
+  padding: 10px;
+}
+.score {
+  width: 50%;
+  float: left;
+}
+.scorename {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+.scorevalue {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+}

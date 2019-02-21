@@ -52,10 +52,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
     player_wins += (result == 2) ? 1 : 0;
 
     // Update the UI
-    var score_computer = "(" + computer_wins + ") Computer";
-    var score_player = "(" + player_wins + ") Player";
-    document.getElementById("computer_symbol").textContent = score_computer + ": " + computer_symbol_name;
-    document.getElementById("player_symbol").textContent = score_player + ": " + player_symbol_name;
+    document.getElementById("score_computer").textContent = computer_wins;
+    document.getElementById("score_player").textContent = player_wins;
+    document.getElementById("computer_symbol").textContent = "Computer : " + computer_symbol_name;
+    document.getElementById("player_symbol").textContent = "Player: " + player_symbol_name;
 
     document.getElementById("status_text").textContent = messages[result] + " Choose a symbol to play again.";
   }
