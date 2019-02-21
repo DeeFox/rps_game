@@ -9,7 +9,7 @@
   <body>
     <div class="content">
       <h1>ROCK PAPER SCISSORS</h1>
-      <div class="scoreboard clearfix">
+      <div class="clearfix">
         <div class="score">
           <div class="scorename">Computer</div>
           <div id="score_computer" class="scorevalue">0</div>
@@ -20,8 +20,16 @@
         </div>
       </div>
       <div id="status_text">Choose a symbol!</div>
-      <h3 id="computer_symbol">Computer: ---</h2>
-      <h3 id="player_symbol">Player: ---</h2>
+      <div class="clearfix">
+        <div class="symbol_box">
+          <img id="symbol_computer" class="symbol" src="svg/rock.svg">
+          <div id="symbolname_computer" class="symbol_name">---</div>
+        </div>
+        <div class="symbol_box">
+          <img id="symbol_player" class="symbol" src="svg/rock.svg">
+          <div id="symbolname_player" class="symbol_name">---</div>
+        </div>
+      </div>
 
       <hr>
       <div class="symbol_buttons">
@@ -29,6 +37,13 @@
         <button id="btn_paper">Paper</button>
         <button id="btn_scissors">Scissors</button>
       </div>
+      <hr>
+      <div class="license">All icons included above are by Studio Fibonacci, US from <a href="http://thenounproject.com">the Noun Project</a>.</div>
+    </div>
+    <div class="preload">
+      <img src="svg/rock.svg">
+      <img src="svg/paper.svg">
+      <img src="svg/scissors.svg">
     </div>
   </body>
 </html>

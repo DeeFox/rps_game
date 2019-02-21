@@ -4,9 +4,9 @@ var symbols = {
   PAPER: 1,
   SCISSORS: 2,
   properties: {
-    0: {name: "Rock"},
-    1: {name: "Paper"},
-    2: {name: "Scissors"}
+    0: {name: "Rock", file: "svg/rock.svg"},
+    1: {name: "Paper", file: "svg/paper.svg"},
+    2: {name: "Scissors", file: "svg/scissors.svg"}
   }
 };
 
@@ -54,9 +54,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
     // Update the UI
     document.getElementById("score_computer").textContent = computer_wins;
     document.getElementById("score_player").textContent = player_wins;
-    document.getElementById("computer_symbol").textContent = "Computer : " + computer_symbol_name;
-    document.getElementById("player_symbol").textContent = "Player: " + player_symbol_name;
+
+    document.getElementById("symbolname_computer").textContent = computer_symbol_name;
+    document.getElementById("symbolname_player").textContent = player_symbol_name;
 
     document.getElementById("status_text").textContent = messages[result] + " Choose a symbol to play again.";
+
+    // Update the svg symbols
+    document.getElementById("symbol_computer").src = symbols.properties[computer_symbol].file;
+    document.getElementById("symbol_player").src = symbols.properties[player_symbol].file;
+
+
   }
 });

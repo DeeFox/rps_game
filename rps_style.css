@@ -47,3 +47,33 @@ h1 {
   font-weight: bold;
   text-align: center;
 }
+.preload {
+  display: none;
+}
+.symbol {
+  height: 250px;
+}
+.symbol_box {
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+.symbol_name {
+  text-align: center;
+  font-size: 20px;
+}
+#symbol_computer {
+  transform: rotate(70deg);
+}
+#symbol_player {
+  transform: rotate(-70deg) scale(-1, 1);
+}
+.license {
+  text-align: center;
+  font-style: italic;
+  font-size: 12px;
+  color: #FFFFFF;
+}
+.license > a {
+  color: #FFFFFF;
+}
