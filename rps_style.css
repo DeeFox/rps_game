@@ -19,6 +19,7 @@ h1 {
 }
 .symbol_buttons > button {
   width: 30%;
+  font-weight: bold;
   font-size: 30px;
 }
 #status_text {
