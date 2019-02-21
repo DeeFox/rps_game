@@ -29,9 +29,14 @@ h1 {
   color: #FFC857;
 }
 .content {
+  width: 100%;
   margin: auto;
-  width: 600px;
   padding: 10px;
+}
+@media only screen and (min-width: 600px) {
+    .content {
+      width: 600px;
+    }
 }
 .score {
   width: 50%;
