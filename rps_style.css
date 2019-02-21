@@ -8,6 +8,26 @@ h1 {
   font-weight: bold;
   text-align: center;
 }
+.clearfix::after {
+   content: " ";
+   display: block;
+   height: 0;
+   clear: both;
+}
+.symbol_buttons {
+  text-align: center;
+}
+.symbol_buttons > button {
+  width: 30%;
+  font-size: 30px;
+}
+#status_text {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px;
+  color: #FFC857;
+}
 .content {
   margin: auto;
   width: 600px;
